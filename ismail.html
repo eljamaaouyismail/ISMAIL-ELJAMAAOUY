@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ISMAIL EL JAMAAOUY | Graphic Designer</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #0b0b0b;
+      overflow: hidden;
+      color: white;
+      text-align: center;
+    }
+
+    .hero {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    h1 {
+  font-size: 60px;
+  font-weight: 800;
+  letter-spacing: 4px;
+  margin: 0;
+  color: #00ff66; /* Green */
+}
+
+.btn {
+  margin-top: 35px;
+  padding: 12px 35px;
+  background: #00ff66;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: #00cc55;
+  transform: scale(1.05);
+}
+    .btn:hover {
+      background: white;
+      color: black;
+      transform: scale(1.08);
+    }
+
+    /* Moon Shapes */
+    .moon {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(100px);
+      opacity: 0.5;
+      animation: float 12s infinite ease-in-out;
+    }
+
+    .moon1 {
+      width: 350px;
+      height: 350px;
+      background: #00ff66; /* Green */
+      top: 10%;
+      left: 10%;
+    }
+
+    .moon2 {
+      width: 300px;
+      height: 300px;
+      background: white; /* White */
+      bottom: 15%;
+      right: 10%;
+      animation-delay: 4s;
+    }
+
+    .moon3 {
+      width: 250px;
+      height: 250px;
+      background: #00ff66;
+      top: 60%;
+      left: 55%;
+      animation-delay: 7s;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-40px); }
+      100% { transform: translateY(0px); }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- Background Shapes -->
+  <div class="moon moon1"></div>
+  <div class="moon moon2"></div>
+  <div class="moon moon3"></div>
+
+  <div class="hero">
+    <h1>ISMAIL EL JAMAAOUY</h1>
+    <p>Graphic Designer</p>
+    <a href="#" class="btn">View My Work</a>
+  </div>
+
+</body>
+</html>
